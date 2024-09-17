@@ -18,7 +18,7 @@ class Cproducts extends Controller
       $productArr = $this->Mproducts->getProduct($request, $id);
       
       $data['productArr'] = $productArr;
-      $data['id'] = $id;
+      // $data['id'] = $id;
       // echo "<pre>"; print_r($data); die;
       return $this->showView('shop',$data);
    }
